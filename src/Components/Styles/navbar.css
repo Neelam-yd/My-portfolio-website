@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 2);
+    color: #fff;
+    padding: 10px 20px;
+    height:50px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand-name {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: rgb(255, 193, 6);
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: cursive;
+  }
+  
+  .navbar-toggler {
+    display: none;/* Hide toggler button by default */
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  
+  }
+  
+  .nav-item a:hover {
+    color: rgb(255, 225, 0);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-toggler {
+      display: block; /* Show toggler button on small screens */
+      order: 3; /* Place toggler button at the end */
+     
+    }
+    .navbar-toggler-icon{
+     
+      color:rgb(255, 193, 6);
+    }
+    
+    .navbar-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      background-color:black;
+      z-index: 10;
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav.open {
+      display: flex;
+    }
+    .nav-item {
+      margin: 10px 0;
+    }
+    .nav-item a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+    
+    }
+  }
+  

@@ -1,0 +1,137 @@
+/* ContactForm.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+.h{
+  background-color: black; /* Specify the path to your image */
+    background-size: cover; /* Adjust this according to your image */
+    background-position: center;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+}
+/* Contact container */
+.contact-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+ 
+}
+
+/* Contact image */
+.contact-image {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 50px;
+}
+
+.contact-image img {
+  width: 80%;
+  height: auto;
+  border-radius:60%;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+/* Contact form */
+.contact-form {
+  flex: 0;
+  max-width: 40%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+ .h .heading h2 {
+padding-top: 10px;
+margin-top: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  font-weight:bolder;
+  font-style:normal;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  justify-content: left;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+  background-color: rgb(32, 31, 31);
+  color:white;
+
+}
+
+textarea {
+  height: 70px;
+}
+
+button[type="submit"] {
+ background-color:rgb(255, 193, 6);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(49, 46, 46);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-image
+  {
+    max-width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contact-form form{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 1px;
+
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    margin-left: 1px;
+    width: 80%;
+    margin-top: 20px;
+  }
+  input[type="text"],
+input[type="email"],
+textarea {
+ 
+  margin-left: 0px;
+  width:200%;
+  padding: 10px;
+}
+}

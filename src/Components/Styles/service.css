@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+   margin-top: 0;
+   font-family: "Nunito", sans-serif;
+   font-optical-sizing: auto;
+   font-size: 50px;
+   font-weight:bolder;
+   font-style:normal;
+  
+    
+}
+.s{    background-color: black;
+    background-size: cover; /* Adjust this according to your image */
+    background-position: center;
+    color:white;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .s h2{
+    text-align: center;
+    justify-content:center;
+    margin-top: 0px;
+    color:white;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    font-weight:bolder;
+    font-style:normal;
+  }
+  .service-item {
+    flex: 1;
+    background-color:rgb(32,31,31);
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right:20px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+   
+    font-weight:bold;
+    font-style:normal;
+  }
+  
+  .service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight:bolder;
+    font-style:normal;
+    
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+  }
+  .button{
+    background-color: rgb(255, 193, 6);
+    border: none;
+    
+    font-weight: bold;
+    border-radius: 30px;
+    height:30px;
+    width:100px;
+    padding: 3px;
+  }
+  .icon{
+    color:rgb(255, 193, 6) ;
+  }
+  @media screen and (max-width: 768px) {
+    .service {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .service-item {
+      margin-bottom: 20px;
+    }
+  }
+  

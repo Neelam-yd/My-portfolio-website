@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+.nunito-home{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    /*background-image: url('C:\Users\neela\OneDrive\Desktop\Neelam\app\src\Components\Assets\image.png'); /* Specify the path to your image */
+    background-size: cover; /* Adjust this according to your image */
+    background-position: center;
+    color:white;
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .home-content {
+    flex: 1;
+  }
+  
+  .home-text {
+    margin-bottom: 20px;
+  }
+  
+  .hire-me-button {
+    text-align: center;
+    font-weight:bolder;
+  }
+  
+  .hire-me-button button {
+    padding: 10px 20px;
+    background-color: rgb(255, 193, 6);
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:120px;
+    font-family: "Nunito", sans-serif;
+   
+    font-weight:bolder;
+    font-style:normal;
+  }
+  h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top:0;
+    margin-top: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
+
+  }
+  h2{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    color:white;
+   
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+  }
+  .name{
+    color: rgb(255, 193, 6);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
+  }
+  
+  .home-image {
+    flex: 1;
+    text-align: center;
+    
+       
+      }
+  
+  
+  .home-image img {
+   
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .home-image.animate-from-right {
+    animation: slideInFromRight 1s ease-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .home-content {
+      text-align: center;
+    }
+  
+    .home-text,
+    .hire-me-button {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

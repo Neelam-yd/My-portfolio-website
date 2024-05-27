@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+.skill {
+    padding: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    /* Set the section background color to white */
+    color:black;
+    background-color: black;
+    background-size: cover; /* Adjust this according to your image */
+    background-position: center; /* Set the text color to black */
+  }
+  
+  .skill h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color:white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 50px;
+    font-weight:bolder;
+    font-style:normal;
+  }
+  
+  .skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    width: 100px;
+    margin: 20px;
+    background-color:rgb(32,31,31); /* Set the background color of skill boxes to black */
+    color:rgb(255, 193, 6); /* Set the text color of skill boxes to white */
+    padding: 20px; /* Add padding to the skill boxes */
+    border-radius: 10px; /* Add border-radius to create rounded corners */
+  }
+  
+  .skill-item i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-item p {
+    font-size: 1rem;
+    color:white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight:bolder;
+    font-style:normal;
+  }
+  

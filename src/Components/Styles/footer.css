@@ -1,0 +1,30 @@
+/* Footer styles */
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px; /* Add some space between icons */
+}
+
+/* Responsive styles for footer */
+@media only screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content a {
+    margin: 10px 0; /* Adjust margin for vertical spacing */
+  }
+}
