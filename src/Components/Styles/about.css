@@ -33,6 +33,8 @@
     margin-bottom: 20px;
   }
   .about-content p {
+    padding:40px;
+    text-align:center;
     font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -43,7 +45,9 @@
   @media screen and (max-width: 768px) {
     .about {
       padding: 20px;
-     
-    }
+     }
+     .about-content p{
+      padding:10px;
+     }
   }
   
