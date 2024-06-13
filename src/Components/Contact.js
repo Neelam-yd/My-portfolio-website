@@ -1,27 +1,40 @@
-import React, { useState } from 'react';
+import React, { useRef, useState} from 'react';
 import './Styles/contact.css'; // Import CSS file for styling
 import contactus from './contactus.png';
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+import emailjs from '@emailjs/browser';
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+export const ContactUs = () => {
+  const form = useRef();
+  const [showPopup, setShowPopup] = useState(false);
+  const [popupMessage, setPopupMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData); // For demonstration, log form data to console
-    // You can send this data to your backend or perform other actions
+
+    emailjs
+    .sendForm('service_ihjstts', 'template_pij807n', form.current, {
+        publicKey: 'Vx6268t40hakkh0H5',
+      })
+      .then(
+        () => {
+          
+          console.log('SUCCESS!');
+          setPopupMessage('Form submitted successfully!');
+        setShowPopup(true);
+        
+      },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setPopupMessage('Failed to submit form. Please try again later.');
+          setShowPopup(true);
+        },
+      );
   };
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
 
   return (
     <div className="h">
@@ -33,46 +46,32 @@ const ContactForm = () => {
       </div>
       {/* Right side with contact form */}
       <div className="contact-form">
-       
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
+      <form ref={form} onSubmit={sendEmail}>
+        <div className ="form-group">
+      <label>Name :</label>
+      <input type="text" name="full_name" /></div>
+      <div className ="form-group">
+      <label>Email :</label>
+      <input type="email" name="email_id" /></div>
+      <div className ="form-group">
+      <label>Message :</label>
+      <textarea name="message" />
+      
+      <button type="submit" value="Send Message" >Submit</button>
       </div>
-    </div>
-    </div>
+    </form>
+      </div>
+      </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <p>{popupMessage}</p>
+            <button onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
+      </div>
   );
 };
 
-export default ContactForm;
+export default ContactUs;

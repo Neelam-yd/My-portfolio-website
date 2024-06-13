@@ -34,8 +34,12 @@
     padding: 0;
     margin: 0;
   }
-  .items{
+  .items {
     display:flex;
+    align-items:center;
+  }
+  .icon{
+    margin-right: 3px;
   }
   
   .nav-item {

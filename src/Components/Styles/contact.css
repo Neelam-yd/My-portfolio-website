@@ -89,6 +89,10 @@ button[type="submit"] {
  background-color:rgb(255, 193, 6);
   color: black;
   border: none;
+  margin-top: 10px;
+ 
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -97,7 +101,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: rgb(49, 46, 46);
+  background-color: rgb(224, 194, 42);
 }
 
 /* Responsive styles */
