@@ -65,9 +65,10 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: bolder;
-    font-style: normal;
+    font-style:normal;
     color:white;
-   
+   padding-top: 0px;
+   margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
     

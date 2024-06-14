@@ -1,104 +1,64 @@
 /* Project section styles */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
-.p {
-  padding: 50px 20px;
+/* styles.css */
+.ProjectSection {
   background-color: black;
-  background-size: cover; /* Adjust this according to your image */
-  background-position: center;
-  margin-bottom: 0;
- 
+  padding: 50px 20px;
+  color: white;
 }
-.p h2{
-  color:white;
+h2 .project{
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 50px;
-  font-weight:bolder;
-  font-style:normal;
-  
+font-optical-sizing: auto;
+font-size: 50px;
+font-weight:bolder;
+font-style:normal;
+  color:white;
+  margin-bottom: 50px;}
 
-}
-
-.container {
+.ProjectsWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  
+  
 }
 
-.project {
-  position: relative;
-  margin: 20px;
-  overflow: hidden;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project:hover {
-  transform: translateY(-5px); /* Add swipe animation on hover */
-}
-
-.project img {
-  width: 350px;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project:hover .overlay {
-  opacity: 1;
-}
-
-.project-details {
-  text-align: center;
-  padding: 20px;
-}
-
-.project-details h2 {
-  margin-bottom: 10px;
-  color:white;
-}
-
-.project-details p {
+.ProjectCard {
+  width: calc(33.33% - 20px);
   margin-bottom: 20px;
+margin-right: 10px;
+  background-color: rgb(30, 33, 33);
+  padding: 5px;
 }
 
-.project-details button {
-  background-color: #fff;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+
+@media (max-width: 768px) {
+  .ProjectCard {
+    width: calc(100% - 20px);
+    margin:30px;
+  }
 }
 
-/* Responsive styles for Project section */
-@media only screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+  .ProjectCard {
+    width: 100%;
   }
+}
 
-  .project {
-    max-width: 250px;
-    margin-bottom: 20px;
-   align-items: center;
-   justify-content: center;
-  }
+.ProjectImage {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.ProjectTitle {
+  color:white;
+  margin-top: 10px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.ProjectDescription {
+  color: rgb(217, 207, 207);
 }
 
 
