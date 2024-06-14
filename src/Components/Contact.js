@@ -64,8 +64,7 @@ export const ContactUs = () => {
         <div className="popup">
           <div className="popup-content">
             <p>{popupMessage}</p>
-            
-          </div>
+           </div>
         </div>
       )}
       </div>
