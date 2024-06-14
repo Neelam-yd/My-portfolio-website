@@ -31,9 +31,7 @@ export const ContactUs = () => {
         },
       );
   };
-  const closePopup = () => {
-    setShowPopup(false);
-  };
+ 
 
 
   return (
@@ -66,7 +64,7 @@ export const ContactUs = () => {
         <div className="popup">
           <div className="popup-content">
             <p>{popupMessage}</p>
-            <button onClick={closePopup}>Close</button>
+            
           </div>
         </div>
       )}
